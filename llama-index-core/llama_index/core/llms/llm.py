@@ -864,7 +864,7 @@ class LLM(BaseLLM):
 
     def as_structured_llm(
         self,
-        output_cls: BaseModel,
+        output_cls: type[BaseModel],
         **kwargs: Any,
     ) -> "StructuredLLM":
         """Return a structured LLM around a given object."""
